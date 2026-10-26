@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#283c32">
+  <meta name="description" content="A five-stage, offline English language mystery for B1 learners.">
+  <title>The Missing Library Key · An English language mystery</title>
+  <link rel="icon" href="data:,">
+  <style>
+:root{--paper:#f7f4ec;--card:#fffdf8;--ink:#25382f;--muted:#596458;--line:#d7d8ca;--green:#294c3b;--pale:#e8eddf;--gold:#b28c43;--error:#913d25;--error-bg:#fff0e8;--radius:14px;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);font-size:16px;line-height:1.6;color-scheme:light}
+*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button,a,input,select,textarea{touch-action:manipulation}button{cursor:pointer}button:disabled{cursor:default}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid #93631f;outline-offset:4px}a{color:var(--green)}[hidden]{display:none!important}.skip-link{position:fixed;left:16px;top:-100px;background:var(--ink);color:white;padding:12px;z-index:20}.skip-link:focus{top:12px}.site-header,main,footer{max-width:1180px;margin:auto}.site-header{min-height:106px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 28px;border-bottom:1px solid var(--line)}.wordmark{display:flex;gap:12px;align-items:center;text-decoration:none;font-size:12px;font-weight:bold;letter-spacing:1.6px}.wordmark small{display:block;font-size:8px;letter-spacing:1.7px;margin-top:2px}.header-actions{display:flex;align-items:center;gap:23px}.level{font-size:10px;letter-spacing:1.4px;background:var(--pale);padding:6px 11px;border:1px solid #c9d1bd;border-radius:4px;font-weight:bold}.text-button{color:var(--ink);background:none;border:0;padding:10px 0;font-size:13px}.text-button span{margin-left:6px;font-size:20px}main{padding:0 28px 64px}h1,h2,h3,p{margin:0}h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:normal}h1{font-size:clamp(48px,5.3vw,72px);line-height:1.04;letter-spacing:-2.7px;margin:19px 0 20px}h1 em{color:#516c43;font-weight:normal}h2{font-size:32px;line-height:1.2;letter-spacing:-.7px}h3{font-size:25px;line-height:1.3}.eyebrow{font-size:10px;letter-spacing:2px;font-weight:bold}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:68px;align-items:center;padding:49px 0 45px}.hero-description{color:var(--muted);font-size:16px;line-height:1.7}.hero-tags{display:flex;flex-wrap:wrap;gap:15px;margin-top:23px;font-size:11px;color:var(--muted)}.hero-tags span+span:before{content:'·';margin-right:15px}.hero-art{position:relative;background:#283c32;border-radius:140px 140px 12px 12px;overflow:hidden;max-width:438px;padding:10px 8px 0}.hero-art svg{display:block;width:100%;height:auto}.case-stamp{position:absolute;top:25px;right:29px;font-size:8px;letter-spacing:2px;color:#e3d7b5;line-height:1.4;text-align:center;border:1px solid #75826d;padding:7px;transform:rotate(8deg)}.case-stamp strong{font-family:Georgia,serif;font-size:20px;letter-spacing:3px;font-weight:normal}.welcome{border-top:1px solid var(--line);padding:34px 0 0;display:grid;grid-template-columns:1.2fr 1fr;gap:80px}.welcome h2{margin:9px 0 14px}.welcome p:not(.eyebrow){font-size:14px;margin-bottom:12px}.muted{color:var(--muted)}.primary,.secondary{border-radius:6px;padding:12px 20px;min-height:48px;font-size:14px;font-weight:bold;display:inline-flex;align-items:center;justify-content:center;gap:26px;border:1px solid var(--green)}.primary{background:var(--green);color:white}.primary:hover{background:#193a29}.primary:disabled{background:#e5e7df;color:#646e60;border-color:#b9c0b2}.secondary{background:transparent;color:var(--green)}.secondary:hover{background:var(--pale)}#begin-button{margin-top:12px}.mission-list{list-style:none;margin:0;padding:0}.mission-list li{display:flex;gap:20px;border-bottom:1px solid var(--line);padding:18px 0}.mission-list li:first-child{padding-top:4px}.mission-list li>span{font-family:Georgia,serif;font-size:24px;color:#697652}.mission-list strong{font-size:14px}.mission-list p{color:var(--muted);margin:3px 0 0!important;font-size:13px!important}.in-progress .hero{padding:25px 0 26px;gap:25px;grid-template-columns:1fr auto}.in-progress .hero h1{font-size:38px;margin:10px 0 9px;letter-spacing:-1.2px}.in-progress .hero h1 br{display:none}.in-progress .hero-description,.in-progress .hero-tags{display:none}.in-progress .hero-art{width:180px;border-radius:70px 70px 8px 8px}.in-progress .case-stamp{display:none}.progress-heading{display:flex;justify-content:space-between;gap:10px;font-size:10px;font-weight:bold;letter-spacing:1.5px}.progress-track{height:4px;margin-top:10px;background:#dce1d3;border-radius:4px;overflow:hidden}.progress-track>span{display:block;height:100%;background:var(--green);width:0;transition:width .25s}.stage-list{list-style:none;display:flex;justify-content:space-between;gap:12px;padding:15px 0 24px;margin:0}.stage-list li{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted)}.stage-dot{display:inline-grid;place-items:center;border:1px solid #b4bfaa;border-radius:50%;width:25px;height:25px;flex-shrink:0;font-size:10px}.stage-list .current{color:var(--ink);font-weight:bold}.current .stage-dot,.done .stage-dot{background:var(--green);color:white;border-color:var(--green)}.stage-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}.stage-header{padding:24px 30px 23px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:15px}.stage-header h2{margin:7px 0}.stage-header .intro{color:var(--muted);font-size:14px}.stage-marker{font-family:Georgia,serif;color:#718064;font-size:38px;line-height:1;border-left:1px solid var(--line);padding-left:24px}.stage-grid{display:grid;grid-template-columns:1fr 1fr}.evidence{padding:28px 30px;background:#f0f0e5;border-right:1px solid var(--line)}.evidence-heading{display:flex;justify-content:space-between;gap:10px;margin-bottom:18px}.evidence-heading span{font-size:10px;color:var(--muted);letter-spacing:1px}.extract{font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.85}.extract p+p{margin-top:16px}.extract .source{font:10px Arial,sans-serif;letter-spacing:.8px;display:block;color:var(--muted);margin-top:5px}.glossary{border-top:1px solid #cdd1bf;margin-top:22px;padding-top:15px;font-size:12px}.glossary summary{cursor:pointer;min-height:30px;font-weight:bold}.glossary dl{margin:10px 0 0}.glossary dt{font-weight:bold;display:inline}.glossary dd{display:inline;margin:0}.glossary dd:after{content:'';display:block;margin-bottom:7px}.challenge{padding:28px 30px}.task-heading{font-size:10px;letter-spacing:1.5px;font-weight:bold;margin-bottom:15px}.question{border:0;margin:0 0 25px;padding:0;min-width:0}.question legend{font-size:14px;font-weight:bold;margin-bottom:10px;line-height:1.6;padding:0;width:100%}.option{display:flex;gap:11px;align-items:flex-start;position:relative;border:1px solid var(--line);border-radius:7px;background:var(--card);padding:12px 13px;margin-bottom:8px;font-size:13px;line-height:1.6;cursor:pointer}.option:hover{border-color:#829674;background:#f5f6ee}.option:has(input:checked){border-color:var(--green);background:#eaf0e3}.option:has(input:focus-visible){outline:3px solid #93631f;outline-offset:3px}.option input{accent-color:var(--green);flex-shrink:0;width:17px;height:17px;margin:2px 0 0}.option input:focus-visible{outline:none}.option input:disabled{opacity:1}.question-note{font-size:12px;line-height:1.6;margin-top:9px;padding:10px 12px;border-left:3px solid var(--error);background:var(--error-bg);color:#75301d}.question-note.correct{border-color:#45673b;background:#e8efdf;color:#29442b}.order-row{display:flex;gap:14px;align-items:center;border-bottom:1px solid var(--line);padding:11px 0;font-size:13px}.order-row label{flex:1}.order-row select{width:95px;border:1px solid #829078;background:var(--card);color:var(--ink);border-radius:5px;padding:9px}.order-help{font-size:12px;color:var(--muted);margin-bottom:8px}.actions{border-top:1px solid var(--line);padding-top:18px;display:flex;flex-wrap:wrap;align-items:center;gap:12px}.hint-button{border:0;background:transparent;color:var(--green);font-size:13px;text-decoration:underline;text-underline-offset:3px;padding:12px;min-height:44px}.hint{background:#f4eddc;border:1px solid #d7c99e;border-radius:7px;padding:13px 15px;font-size:13px;margin-bottom:16px}.hint strong{display:block;font-size:10px;letter-spacing:1px;margin-bottom:3px}.feedback{font-size:14px;margin:0 0 16px;line-height:1.6}.feedback:not(:empty){border:1px solid #bdc8b0;background:#edf2e5;padding:14px;border-radius:7px}.feedback.needs-work{border-color:#d6ae96;background:var(--error-bg);color:#75301d}.next-row{margin:20px 0 0;display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:12px;color:var(--muted)}.next-row span{max-width:65%}.source-note{font-size:11px;color:var(--muted);padding:14px 30px;border-top:1px solid var(--line)}.ending-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}.ending-banner{padding:35px;background:var(--green);color:#fffdf8;text-align:center}.ending-banner h2{font-size:40px;margin:10px 0}.ending-banner p:last-child{font-size:14px;color:#e1e7d9}.ending-content{padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:40px}.ending-content h3{margin-bottom:16px}.ending-content .extract{font-size:16px}.reflection label{display:block;font-size:14px;font-weight:bold;margin:18px 0 9px}.reflection textarea{width:100%;resize:vertical;min-height:115px;border:1px solid #97a38b;border-radius:7px;background:#fafbf6;color:var(--ink);padding:12px;line-height:1.7;font-size:14px}.reflection .muted{font-size:12px}.reflection .secondary{margin-top:15px}.reflection #reflection-feedback{margin-top:15px;font-size:13px}.ending-bottom{border-top:1px solid var(--line);padding:22px 30px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:12px;color:var(--muted)}footer{padding:24px 28px 30px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px;color:var(--muted);font-size:10px}footer>span:first-child{letter-spacing:1.5px;font-weight:bold}footer p{font-family:Georgia,serif;font-style:italic;font-size:14px}dialog{background:var(--card);color:var(--ink);max-width:480px;width:calc(100% - 32px);border:1px solid var(--line);border-radius:12px;padding:28px}dialog::backdrop{background:#162b21b3}dialog h2{font-size:27px;margin-bottom:12px}.dialog-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.no-script{padding:25px;max-width:800px;margin:auto} @media(max-width:850px){.hero{gap:30px}.welcome{gap:35px}.stage-header,.challenge,.evidence{padding:23px}.stage-list li{font-size:10px}.stage-list{gap:8px}.stage-dot{width:22px;height:22px}.stage-list li{gap:5px}.ending-content{gap:25px}footer{flex-wrap:wrap}}@media(max-width:650px){.site-header{padding:18px 20px;min-height:80px}.wordmark{font-size:10px;letter-spacing:1px;gap:8px}.wordmark small{font-size:7px;letter-spacing:1px}.header-actions{gap:12px}.level{font-size:9px;padding:5px 7px}main{padding:0 20px 40px}.hero{gap:22px;grid-template-columns:1fr;padding:30px 0}.hero h1{font-size:57px}.hero-art{display:none}.welcome{grid-template-columns:1fr;gap:30px;padding-top:26px}.welcome h2{font-size:29px}.hero-tags{gap:10px}.hero-tags span+span:before{margin-right:10px}.in-progress .hero{padding:24px 0}.in-progress .hero h1{font-size:34px}.in-progress .hero .eyebrow{font-size:9px}.stage-grid,.ending-content{grid-template-columns:1fr}.evidence{border-right:0;border-bottom:1px solid var(--line)}.stage-list .stage-name{display:none}.stage-list .current .stage-name{display:inline}.stage-list{padding-bottom:18px}.stage-header{padding:20px}.stage-header h2{font-size:29px}.stage-marker{font-size:30px;padding-left:14px}.evidence,.challenge{padding:22px 20px}.extract{font-size:17px}.next-row{align-items:flex-start}.next-row span{max-width:55%}.source-note{padding:12px 20px}.ending-content{padding:22px 20px}.ending-banner{padding:28px 20px}.ending-banner h2{font-size:34px}.ending-bottom{padding:20px;flex-direction:column;align-items:flex-start}footer{padding:20px;gap:10px}footer p{display:none}.header-actions .text-button{font-size:12px}.progress-heading{font-size:9px;letter-spacing:1px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.skip-link{top:12px;clip-path:inset(50%);pointer-events:none}.skip-link:focus{clip-path:none;pointer-events:auto}.text-button,.glossary summary{min-height:44px}
+@media(max-width:650px){.next-row{flex-direction:column;align-items:stretch}.next-row span{max-width:100%}.next-row button{white-space:nowrap}}
+
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to game</a>
+  <header class="site-header">
+    <a class="wordmark" href="#main" aria-label="The Missing Library Key">
+      <svg viewBox="0 0 32 32" width="30" height="30" fill="none" aria-hidden="true"><path d="M16 9C12 6 7 6 3 7v19c5-1 9-1 13 2 4-3 8-3 13-2V7c-4-1-9-1-13 2Zm0 0v19M7 12h5m-5 5h5m8-5h5m-5 5h5" stroke="currentColor" stroke-width="1.5"/></svg>
+      <span>THE STORY ROOM<small>READ. REASON. DISCOVER.</small></span>
+    </a>
+    <div class="header-actions"><span class="level">B1 ENGLISH</span><button type="button" class="text-button" id="restart-button" hidden>Restart <span aria-hidden="true">↺</span></button></div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="game-title">
+      <div class="hero-copy"><p class="eyebrow">AN ENGLISH LANGUAGE ESCAPE ROOM</p><h1 id="game-title">The Missing<br> Library <em>Key.</em></h1><p class="hero-description">An exhibition to open. A key to find.<br>Follow the evidence. Piece together the past.</p><div class="hero-tags"><span>5 connected clues</span><span>No time limit</span><span>Solo or together</span></div></div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 300" role="presentation"><defs><pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0v22" fill="none" stroke="#f2e8cc" stroke-opacity=".08"/></pattern></defs><rect width="420" height="300" fill="url(#grid)"/><circle cx="213" cy="142" r="112" fill="none" stroke="#a6b09a" stroke-opacity=".25"/><circle cx="213" cy="142" r="95" fill="none" stroke="#a6b09a" stroke-opacity=".15"/><path d="M93 214h233M121 211V102q0-10 10-10h26v119m-27-104h17m-17 10h17m-17 74h17M161 211V73q0-9 9-9h23q8 0 8 9v138m-29-130h18m-18 9h18m-18 100h18M209 211V112q0-8 8-8h28q7 0 7 8v99m-31-91h19m-19 8h19m-19 60h19M268 214l-12-114 33-4 12 118m-34-102 21-2m-13 84 21-2" stroke="#e3d7b5" stroke-width="2" fill="none"/><path d="m314 63 3 9 9 3-9 3-3 9-3-9-9-3 9-3Zm-217 81 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z" fill="#c7ac70"/><text x="210" y="262" text-anchor="middle" fill="#e3d7b5" font-family="Georgia,serif" font-size="12" letter-spacing="4">EVERY DETAIL TELLS A STORY</text></svg>
+        <span class="case-stamp">CASE FILE<br><strong>001</strong></span>
+      </div>
+    </section>
+    <section id="welcome" class="welcome" aria-labelledby="welcome-title">
+      <div><p class="eyebrow">YOUR MISSION</p><h2 id="welcome-title">Read between the lines.</h2><p>Help Deniz and Selin solve a library mystery before the school exhibition. Read each story extract, use its clues, and explain what the evidence means.</p><p class="muted">Practise past simple and past continuous as you go. You can use hints and retry as often as you need. There are no penalties.</p><button type="button" class="primary" id="begin-button">Open the case <span aria-hidden="true">→</span></button></div>
+      <ol class="mission-list"><li><span>01</span><div><strong>Read the evidence</strong><p>Each stage reveals more of the original story.</p></div></li><li><span>02</span><div><strong>Make your case</strong><p>Connect an answer to a detail in the text.</p></div></li><li><span>03</span><div><strong>Unlock the next clue</strong><p>Learn from feedback, then keep investigating.</p></div></li></ol>
+    </section>
+    <section id="game" hidden aria-label="The investigation">
+      <div class="progress-heading"><span id="progress-label">CASE PROGRESS</span><span id="progress-text"></span></div>
+      <div id="progress-track" class="progress-track" role="progressbar" aria-labelledby="progress-label" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><span id="progress-fill"></span></div>
+      <ol id="stage-list" class="stage-list" aria-label="Investigation stages"></ol>
+      <div id="stage-root"></div>
+    </section>
+    <section id="ending" hidden aria-labelledby="ending-title"></section>
+  </main>
+  <footer><span>THE MISSING LIBRARY KEY</span><p>A little mystery. A closer reading.</p><span>Offline · No accounts · No data collected</span></footer>
+  <dialog id="restart-dialog" aria-labelledby="restart-title" aria-describedby="restart-description"><h2 id="restart-title">Start a fresh investigation?</h2><p id="restart-description">Your progress and reflection notes will be cleared.</p><div class="dialog-actions"><button type="button" class="secondary" id="cancel-restart" autofocus>Keep investigating</button><button type="button" class="primary" id="confirm-restart">Restart game</button></div></dialog>
+  <noscript><p class="no-script">Please enable JavaScript to play. This game runs entirely on your device and never uploads your answers.</p></noscript>
+<script>
+'use strict';
+
+// Exact source extracts from story.txt. No network requests or persistent storage.
+const story = [
+  'It was 4:00 PM on Thursday. The annual school exhibition was starting in two hours. Deniz was organizing historical posters on the wall while Selin was dusting the central tables. On the wooden desk lay a brass key with a yellow tag, resting right beside a large, open blue atlas.',
+  'Selin was hurrying to finish her chores. While she was carrying a stack of heavy reference guides across the room, she accidentally bumped the desk. A loud thud echoed through the silent library as a big book slammed shut. Selin continued working, unaware of what had happened.',
+  'At 4:30 PM, Deniz walked to the desk to grab the brass key. He needed to unlock the glass cabinet for the exhibition display. But when he looked at the wooden table, the key was gone! Panicked, Deniz called Selin, and they began searching every corner of the room.',
+  'While Deniz was checking behind the computer monitors, Selin searched the lost-and-found drawer. They looked everywhere on the floor, under the chairs, and inside dustbins. Selin suddenly remembered that she was closing open books on the main table just before the key disappeared, but she saw no key around.',
+  'Deniz spotted Tim, a student who was studying near the desk earlier. Deniz asked him if he saw anyone take the brass key. Tim shook his head and said he was reading the giant blue atlas right on that desk until 4:15 PM, but nobody came near the table.',
+  'By 5:15 PM, anxiety was growing. The principal was arriving soon, and the valuable archive documents were still locked away. Selin was re-checking the librarian’s counter while Deniz was pacing nervously back and forth near the locked display case. Where could a bright yellow tag simply vanish?',
+  'Selin stopped pacing and looked carefully at the central study table. Something caught her eye. She noticed an unusual gap in one of the closed volumes. The thick blue atlas was not resting completely flat; its cover was raised slightly near the middle pages, forming a distinct bulge.',
+  'Deniz walked quickly toward the reading table as Selin pointed at the heavy book. He remembered the sudden thud from earlier, when Selin was moving past the main desk. Was it possible that nobody had stolen the key after all? Deniz reached out to pick up the atlas.',
+  'Deniz carefully lifted the heavy cover of the blue atlas. As he opened the pages to the world map section, both students gasped. There, lying flat between two thick pages, was the shiny brass key attached to its bright yellow tag! It had been hidden inside all along.',
+  'Selin smiled with relief, realizing she had accidentally snapped the atlas shut while clearing the table. Deniz quickly took the brass key and unlocked the glass cabinet just as the first visitors were entering the library. The annual school exhibition was saved, and the mystery was solved!'
+];
+
+const stages = [
+  {
+    name: 'The scene', title: 'A detail worth remembering', pages: [1],
+    intro: 'Start with what the story tells you. Details matter.',
+    hint: 'Find “right beside” for the location. Then notice the two was + -ing phrases joined by “while”.',
+    glossary: [['atlas', 'a book of maps'], ['brass', 'a yellow-coloured metal'], ['exhibition', 'an event where things are displayed']],
+    questions: [
+      {prompt:'1. Which detail describes the key’s starting position?', answer:1,
+       options:['It was on the wall beside the historical posters.', 'It was on the wooden desk beside a large, open blue atlas.', 'It was on one of the central tables that Selin was dusting.'],
+       corrections:['The posters were on the wall. Look for the sentence beginning “On the wooden desk”.', '', 'Selin was dusting the central tables, but the text places the key on the wooden desk.'],
+       success:'“Right beside” places the key next to the open atlas on the wooden desk.'},
+      {prompt:'2. What does “Deniz was organizing … while Selin was dusting …” tell us?', answer:0,
+       options:['Both activities were in progress at the same time.', 'Deniz finished organizing before Selin began dusting.', 'Both activities happened after the exhibition ended.'],
+       corrections:['', '“Was + -ing” presents an activity in progress. “While” connects the two overlapping activities; it does not say one finished first.', 'The exhibition was starting in two hours. These past continuous forms describe preparation before it.'],
+       success:'Past continuous (was/were + -ing) describes actions in progress. “While” links simultaneous activities.'}
+    ],
+    takeaway:'Keep the starting position in mind: the desk, the key, and the open atlas.'
+  },
+  {
+    name:'The interruption', title:'Listen to the interruption', pages:[2],
+    intro:'Connect the action in progress to the sudden event.',
+    hint:'Carrying the guides was already happening. The bump was a short event. Read the very next sentence for the sound and what caused it.',
+    glossary:[['reference guides','books used to look up information'], ['bumped','hit something accidentally'], ['thud','a low, heavy sound']],
+    questions:[
+      {prompt:'1. Complete the account: “While Selin ___ the guides, she accidentally ___ the desk.”', answer:2,
+       options:['carried / was bumping', 'was carrying / was bumping', 'was carrying / bumped'],
+       corrections:['Use past continuous for the carrying already in progress. Use past simple for the sudden bump.', 'The text presents the bump as a completed, sudden event: “bumped”. The carrying was in progress: “was carrying”.', ''],
+       success:'“Was carrying” is the background activity; “bumped” is the sudden completed event.'},
+      {prompt:'2. Which observation is evidence about what happened at the desk?', answer:1,
+       options:['Selin noticed the key disappear and stopped working.', 'A loud thud sounded as a big book slammed shut.', 'The reference guides fell onto the floor.'],
+       corrections:['The text says Selin continued working, unaware. An explanation needs an observation the story actually provides.', '', 'The story says she was carrying guides, but does not say she dropped them. Read what made the loud thud.'],
+       success:'The thud and the closing book are stated observations. The text does not yet explain where the key went.'}
+    ],takeaway:'Evidence collected: a bump, a sudden thud, and a book slamming shut.'
+  },
+  {
+    name:'The accounts', title:'Put the accounts in order', pages:[3,4,5,6],
+    intro:'Separate timed events from what a witness reported.',
+    hint:'Use the times attached to the events, not the order in which they are mentioned: 4:00, 4:15, 4:30, 5:15. Tim’s words tell you what he said he saw.',
+    glossary:[['lost-and-found','a place for objects people have lost'], ['archive documents','important records kept from the past'], ['pacing','walking back and forth']],
+    order:{prompt:'1. Put these timed details in chronological order (1 = earliest).', answer:['3','1','4','2'],
+      items:['Deniz discovered the key was missing (4:30 PM).', 'Deniz was organizing posters and Selin was dusting (4:00 PM).', 'Anxiety was growing; the documents were still locked away (5:15 PM).', 'Tim said he was reading the atlas until 4:15 PM.'],
+      success:'4:00 → 4:15 (according to Tim) → 4:30 → 5:15. This orders the timed details; it does not give an exact time for the bump.'},
+    questions:[
+      {prompt:'2. Which conclusion stays closest to Tim’s account?',answer:0,
+       options:['Tim said nobody came near the table while he was reading there.', 'Tim watched the desk continuously until 4:30 PM.', 'Tim saw someone take the key.'],
+       corrections:['', 'Tim said he was reading until 4:15, not watching until 4:30. Do not extend a witness’s account beyond what was reported.', 'Deniz asked about someone taking the key, but Tim shook his head. A question is not evidence that theft happened.'],
+       success:'Keep the source of the claim clear: “Tim said …”. His account does not prove what happened at every moment.'}
+    ],takeaway:'The searches have not found the key. Tim’s account gives no evidence that someone took it.'
+  },
+  {
+    name:'The physical clue', title:'Something does not lie flat', pages:[7,8],
+    intro:'Use a visible detail to choose the next sensible action.',
+    hint:'Look at the atlas cover. Link its unusual shape to the sound of a book closing earlier. A supported next step is an inspection, not a conclusion about a person.',
+    glossary:[['volume','one book'], ['bulge','a part that sticks out or rises'], ['distinct','clear and easy to notice']],
+    questions:[
+      {prompt:'1. What should Deniz investigate next?', answer:2,
+       options:['Repeat the floor search without using the new observation.', 'Decide that Tim took the key.', 'Open and inspect the blue atlas.'],
+       corrections:['The floor search has already failed. A new physical observation gives a more useful next step.', 'The story gives no evidence that Tim took anything. Use the physical clue rather than accusing a person.', ''],
+       success:'Inspecting the atlas tests an idea. It does not assume the answer before looking.'},
+      {prompt:'2. Which two details best support that next step?', answer:0,
+       options:['The atlas cover was raised near its middle pages; a book had slammed shut earlier.', 'The principal was arriving soon; Deniz was pacing.', 'The exhibition included posters; Selin searched the drawer.'],
+       corrections:['', 'The approaching principal explains the worry, but it does not explain why this particular book deserves inspection.', 'These events are in the story, but neither explains the unusual shape of the atlas. Connect the raised cover to the closing book.'],
+       success:'The raised cover is the new physical clue. The earlier thud and closing book make inspecting it reasonable.'}
+    ],takeaway:'You have a reason to inspect the atlas. Now make a prediction before the final reveal.'
+  },
+  {
+    name:'The reconstruction', title:'Make your final case', pages:[1,2,7],
+    intro:'Revisit three clues. Choose a prediction and reconstruct the interruption.',
+    hint:'The key started beside the open atlas. A book slammed shut, and the atlas later had a bulge near its middle pages. Use past continuous for the activity in progress and past simple for the sudden action.',
+    glossary:[['prediction','an idea about what you expect to find'], ['reconstruct','work out how something happened using evidence']],
+    questions:[
+      {prompt:'1. Which prediction best connects the starting position, the thud, and the bulge?', answer:1,
+       options:['The key is in the lost-and-found drawer, because Selin searched there.', 'The key may be between the pages of the blue atlas.', 'Tim must have taken the key because he was nearby.'],
+       corrections:['A search location is not proof that the key is there. This prediction does not account for the book closing or its raised cover.', '', 'Being nearby is not evidence of taking the key. Your prediction needs to explain the key’s position, the closing book, and the bulge.'],
+       success:'This prediction explains all three clues. Opening the atlas will test it.'},
+      {prompt:'2. Which reconstruction correctly uses past continuous for background and past simple for the sudden event?', answer:2,
+       options:['While Selin carried the guides, she was accidentally bumping the desk.', 'While Selin was carrying the guides, she was accidentally bumping the desk.', 'While Selin was carrying the guides, she accidentally bumped the desk.'],
+       corrections:['“Carried” does not mark the background as in progress here, and “was bumping” changes the sudden event into an ongoing activity. Compare the verbs in paragraph 2.', '“Was carrying” fits the background, but the story presents one sudden bump: use “bumped”.', ''],
+       success:'Past continuous sets the background; past simple moves the story forward with the sudden bump.'}
+    ],takeaway:'Your prediction fits the evidence. Open the atlas to find out what happened.'
+  }
+];
+
+const $ = (id) => document.getElementById(id);
+let currentStage = 0;
+let completed = 0;
+let stageSolved = false;
+let attempts = 0;
+
+function extracts(pages) {
+  return pages.map(page => `<p>${story[page-1]}<span class="source">STORY · PARAGRAPH ${page}</span></p>`).join('');
+}
+
+function updateProgress() {
+  $('progress-text').textContent = `${completed} OF 5 CLUES SOLVED`;
+  $('progress-track').setAttribute('aria-valuenow', completed);
+  $('progress-track').setAttribute('aria-valuetext', `${completed} of 5 clues solved`);
+  $('progress-fill').style.width = `${completed * 20}%`;
+  $('stage-list').innerHTML = stages.map((stage, index) => `<li class="${index < completed ? 'done' : index === currentStage ? 'current' : ''}" ${index === currentStage && completed < 5 ? 'aria-current="step"' : ''}><span class="stage-dot" aria-hidden="true">${index < completed ? '✓' : index + 1}</span><span class="stage-name">${stage.name}</span><span class="sr-only">${index < completed ? ' — solved' : index === currentStage ? ' — current' : ' — locked'}</span></li>`).join('');
+}
+
+function renderStage() {
+  const stage = stages[currentStage];
+  stageSolved = false;
+  attempts = 0;
+  updateProgress();
+  const order = stage.order ? `<fieldset class="question" id="order-group" aria-describedby="order-help order-note"><legend>${stage.order.prompt}</legend><p class="order-help" id="order-help">Give each detail a different position. Paragraph 1 is recalled here.</p>${stage.order.items.map((item,index) => `<div class="order-row"><label for="order-${index}">${item}</label><select id="order-${index}" name="order-${index}" aria-label="Position for: ${item}"><option value="">Choose</option><option value="1">1 — first</option><option value="2">2</option><option value="3">3</option><option value="4">4 — last</option></select></div>`).join('')}<div class="question-note" id="order-note" hidden></div></fieldset>` : '';
+  $('stage-root').innerHTML = `<article class="stage-card" aria-labelledby="stage-title"><header class="stage-header"><div><p class="eyebrow">CLUE ${String(currentStage+1).padStart(2,'0')} / 05</p><h2 id="stage-title" tabindex="-1">${stage.title}</h2><p class="intro">${stage.intro}</p></div><span class="stage-marker" aria-hidden="true">${String(currentStage+1).padStart(2,'0')}</span></header><div class="stage-grid"><section class="evidence" aria-labelledby="evidence-title"><div class="evidence-heading"><h3 id="evidence-title" class="eyebrow">THE EVIDENCE</h3><span>${currentStage === 4 ? 'REVISIT THE CLUES' : 'READ CLOSELY'}</span></div><div class="extract">${extracts(stage.pages)}</div><details class="glossary"><summary>Word help</summary><dl>${stage.glossary.map(([word,meaning])=>`<dt>${word}</dt><dd> — ${meaning}</dd>`).join('')}</dl></details></section><section class="challenge" aria-labelledby="challenge-title"><h3 class="task-heading" id="challenge-title">YOUR INVESTIGATION</h3><form id="challenge-form" novalidate>${order}${stage.questions.map((question,index)=>`<fieldset class="question" aria-describedby="note-${index}"><legend>${question.prompt}</legend>${question.options.map((option,value)=>`<label class="option"><input type="radio" name="q${index}" value="${value}"><span>${option}</span></label>`).join('')}<div class="question-note" id="note-${index}" hidden></div></fieldset>`).join('')}<div id="hint" class="hint" hidden><strong>A NUDGE, NOT A SPOILER</strong>${stage.hint}</div><div class="feedback" id="feedback" role="status" aria-live="polite" aria-atomic="true" tabindex="-1"></div><div class="actions"><button class="primary" type="submit" id="check-button">Check my evidence <span aria-hidden="true">→</span></button><button class="hint-button" id="hint-button" type="button" aria-expanded="false" aria-controls="hint">Need a hint?</button></div><div class="next-row"><span id="next-help">Answer both questions, then choose Next clue. It checks your answers before continuing.</span><button type="button" class="secondary" id="next-button" aria-describedby="next-help">${currentStage === 4 ? 'Open the atlas' : 'Next clue'} <span aria-hidden="true">→</span></button></div></form></section></div><div class="source-note">Original story extracts · Choose an answer for every question · No timer, no guessing penalty</div></article>`;
+  $('challenge-form').addEventListener('submit', checkAnswers);
+  const review = document.createElement('button');
+  review.id = 'review-answers';
+  review.type = 'button';
+  review.className = 'hint-button';
+  review.textContent = 'Return to a question that needs work ↑';
+  review.hidden = true;
+  $('feedback').insertAdjacentElement('afterend', review);
+  review.addEventListener('click', () => {
+    const fieldset = $('challenge-form').querySelector('.question-note:not(.correct)')?.closest('fieldset');
+    if (fieldset) focusAndScroll(fieldset.querySelector('input:checked, select') || fieldset.querySelector('input'));
+  });
+  $('hint-button').addEventListener('click', () => {
+    const opening = $('hint').hidden;
+    $('hint').hidden = !opening;
+    $('hint-button').setAttribute('aria-expanded', String(opening));
+    $('hint-button').textContent = opening ? 'Hide hint' : 'Need a hint?';
+  });
+  $('next-button').addEventListener('click', event => {
+    // Next also checks answers, so learners need not discover a separate unlock step.
+    // Already-solved forms have disabled controls: preserve their checked result.
+    if (!stageSolved) checkAnswers(event);
+    if (!stageSolved) return;
+    if (currentStage === 4) showEnding();
+    else { currentStage++; renderStage(); focusAndScroll($('stage-title')); }
+  });
+}
+
+function setNote(id, text, correct) {
+  const note = $(id);
+  note.textContent = text;
+  note.hidden = false;
+  note.classList.toggle('correct', correct);
+}
+
+function checkAnswers(event) {
+  event.preventDefault();
+  if (stageSolved) return;
+  attempts++;
+  const stage = stages[currentStage];
+  const form = $('challenge-form');
+  const data = new FormData(form);
+  let correct = true;
+  if (stage.order) {
+    const values = stage.order.items.map((_,index) => data.get(`order-${index}`));
+    const validOrder = values.every((value,index) => value === stage.order.answer[index]);
+    let note = stage.order.success;
+    if (values.some(value => !value)) note = 'Choose a position for all four details. Start with the earliest time in the story: 4:00 PM.';
+    else if (new Set(values).size !== values.length) note = 'Each detail needs a different position: use 1, 2, 3 and 4 once each. Compare the times to decide the order.';
+    else if (!validOrder) note = 'Compare the times, not the paragraph order. The 4:15 detail is mentioned after the 4:30 discovery, but belongs earlier in the timeline. Make clear that Tim said it.';
+    setNote('order-note', note, validOrder);
+    correct = correct && validOrder;
+  }
+  stage.questions.forEach((question,index) => {
+    const value = data.get(`q${index}`);
+    const isCorrect = value !== null && Number(value) === question.answer;
+    const note = value === null ? 'Choose an answer, then connect it to a detail in the extract. The hint can help you decide.' : isCorrect ? question.success : question.corrections[Number(value)];
+    setNote(`note-${index}`, note, isCorrect);
+    correct = correct && isCorrect;
+  });
+  const feedback = $('feedback');
+  feedback.classList.toggle('needs-work', !correct);
+  $('review-answers').hidden = correct;
+  if (correct) {
+    stageSolved = true;
+    completed = currentStage + 1;
+    updateProgress();
+    feedback.textContent = `Clue ${completed} solved. ${stage.takeaway}`;
+    form.querySelectorAll('input,select').forEach(control => { control.disabled = true; });
+    $('check-button').disabled = true;
+    $('hint-button').hidden = true;
+    $('next-help').textContent = currentStage === 4 ? 'Your case is ready. Test it by opening the atlas.' : 'Evidence checked. The next part of the story is ready.';
+  } else {
+    feedback.textContent = `Attempt ${attempts}: keep investigating. Read the feedback below each question, adjust your answers, and try again. Your progress is unchanged.`;
+    $('check-button').innerHTML = 'Try again <span aria-hidden="true">↻</span>';
+  }
+  // Announce a concise summary; detailed correction stays attached to each fieldset.
+  focusAndScroll(feedback);
+}
+
+function focusAndScroll(element) {
+  element.focus({preventScroll:true});
+  element.scrollIntoView({block:'start',behavior:'instant'});
+}
+
+function showEnding() {
+  $('stage-root').innerHTML = '';
+  $('ending').hidden = false;
+  $('ending').innerHTML = `<article class="ending-card"><header class="ending-banner"><p class="eyebrow">FIVE CLUES. ONE EXPLANATION.</p><h2 id="ending-title" tabindex="-1">The exhibition is saved.</h2><p>The evidence led you to the missing library key.</p></header><div class="ending-content"><section aria-labelledby="reveal-title"><h3 id="reveal-title">The final pages</h3><div class="extract">${extracts([9,10])}</div><div class="question-note correct">The brass key with its yellow tag accidentally slipped into the large blue atlas when Selin closed it. Nobody stole it. The starting position, the thud, and the raised cover all fit the solution.</div></section><section class="reflection" aria-labelledby="reflection-title"><p class="eyebrow">ONE LAST LOOK</p><h3 id="reflection-title">Explain your thinking.</h3><p class="muted">Write a short response or discuss these together. Notes stay on this page only and clear when you restart or close it.</p><form id="reflection-form"><label for="reflection-evidence">1. Why was the key inside the atlas? Use two story clues to justify your answer.</label><textarea id="reflection-evidence" rows="3" placeholder="I think … because … Another clue was …"></textarea><label for="reflection-tense">2. Find a past simple / past continuous contrast. Which action was in progress, and which event happened?</label><textarea id="reflection-tense" rows="3" placeholder="While … was/were …, … happened."></textarea><button type="submit" class="secondary">Review my reflections</button><p id="reflection-feedback" role="status" aria-live="polite"></p></form></section></div><div class="ending-bottom"><span>Case closed · 5 of 5 clues solved · Keep looking for evidence.</span><button type="button" class="primary" id="play-again">Investigate again <span aria-hidden="true">↺</span></button></div></article>`;
+  $('play-again').addEventListener('click', openRestart);
+  $('reflection-form').addEventListener('submit', event => {
+    event.preventDefault();
+    const hasEvidence = $('reflection-evidence').value.trim().length > 0;
+    const hasTense = $('reflection-tense').value.trim().length > 0;
+    $('reflection-feedback').textContent = hasEvidence && hasTense ? 'Discussion checklist: did you explain the accidental closure, cite two clues, and identify was/were + -ing beside a past simple event? Compare your reasoning with the final pages or a partner. These open responses are not automatically graded.' : 'Add a thought to both prompts, or discuss them aloud. For evidence, revisit the starting position and the raised cover. For tense, compare “was carrying” with “bumped”.';
+  });
+  focusAndScroll($('ending-title'));
+}
+
+function begin() {
+  $('welcome').hidden = true;
+  $('game').hidden = false;
+  $('restart-button').hidden = false;
+  document.body.classList.add('in-progress');
+  renderStage();
+  focusAndScroll($('stage-title'));
+}
+
+let restartTrigger;
+function openRestart(event) {
+  restartTrigger = event.currentTarget;
+  $('restart-dialog').showModal();
+}
+
+function closeRestart() {
+  $('restart-dialog').close();
+  if (restartTrigger && restartTrigger.isConnected) restartTrigger.focus();
+}
+
+function reset() {
+  $('restart-dialog').close();
+  currentStage = 0;
+  completed = 0;
+  stageSolved = false;
+  attempts = 0;
+  $('stage-root').innerHTML = '';
+  $('ending').innerHTML = '';
+  $('ending').hidden = true;
+  $('game').hidden = true;
+  $('welcome').hidden = false;
+  $('restart-button').hidden = true;
+  document.body.classList.remove('in-progress');
+  updateProgress();
+  focusAndScroll($('begin-button'));
+}
+
+$('begin-button').addEventListener('click',begin);
+$('restart-button').addEventListener('click',openRestart);
+$('cancel-restart').addEventListener('click',closeRestart);
+$('confirm-restart').addEventListener('click',reset);
+$('restart-dialog').addEventListener('cancel',() => {
+  // Escape closes the native modal; the browser restores focus to its trigger.
+});
+
+</script>
+</body>
+</html>
